@@ -1,8 +1,4 @@
-"Tabela 1612 - Planted area, harvested area, quantitiy produced, average yield and production value of temporary crops",,,,,
-"Brazil, greater Region and Federation Unit - Brazil",,,,,
-Year - 2020,,,,,
-Product of temporary crops,Variable,,,,
-,Planted area (Hectares),Harvested area (Hectares),Quantity produced (Tons),Average production yield (Kilograms per Hectare),Production value (Thousand Reals)
+Crop,Planted area (Hectares),Harvested area (Hectares),Quantity produced (Tons),Average production yield (Kilograms per Hectare),Production value (Thousand Reals)
 Total,77965057,77730130,..,..,395011989
 Pineapple*,65049,64787,1637126,25269,2334120
 Hay alfalfa,...,...,...,...,...

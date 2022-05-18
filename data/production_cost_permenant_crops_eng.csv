@@ -1,8 +1,4 @@
-"Tabela 1613 - Area for harvesting, harvested area, quantity produced, average yield and production value of permanent crops",,,,,
-"Brazil, Greater Region and Federation Unit - Brazil",,,,,
-Year - 2020,,,,,
-Product of permanent crops,Variable,,,,
-,Area intended for harvest (Hectares),Harvested area (Hectares),Quantity produced (tons),Average production yield (Kilograms per Hectare),Production value (Thousand Reals)
+Crop,Area intended for harvest (Hectares),Harvested area (Hectares),Quantity produced (tons),Average production yield (Kilograms per Hectare),Production value (Thousand Reals)
 Total,5430947,5408413,..,..,75469757
 Avocado,16497,16211,266784,16457,473236
 Arboreal cotton (seed),-,-,-,-,-

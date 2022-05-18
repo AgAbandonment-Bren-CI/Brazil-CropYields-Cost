@@ -14,8 +14,25 @@ library(janitor)
 
 
 ```{r}
-# read in translated datasets
-temp_crops <- read_csv(here("data", "production_cost_temporary_crops_eng_.csv"))
-perm_crops <- read_csv(here("data", "production_cost_permenant_crops_eng.csv"))
+# read in translated data sets and tidy up format
+temp_crops <- read_csv(here("data", "production_cost_temporary_crops_eng.csv")) %>% 
+  clean_names() %>% 
+  mutate(crop = str_to_lower(crop))
+
+perm_crops <- read_csv(here("data", "production_cost_permenant_crops_eng.csv")) %>% 
+  clean_names() %>% 
+  mutate(crop = str_to_lower(crop))
+```
+
+
+```{r}
+# convert reals to USD
+temp_crops <- temp_crops %>% 
+  mutate(production_value_thousand_reals = as.numeric(production_value_thousand_reals)) %>% 
+  mutate(production_value_thousand_USD = production_value_thousand_reals / 5.156)
+
+perm_crops <- perm_crops %>% 
+  mutate(production_value_thousand_reals = as.numeric(production_value_thousand_reals)) %>% 
+  mutate(production_value_thousand_USD = production_value_thousand_reals / 5.156)
 ```
 
