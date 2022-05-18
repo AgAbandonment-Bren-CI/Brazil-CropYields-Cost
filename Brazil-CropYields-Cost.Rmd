@@ -1,0 +1,21 @@
+---
+title: "Brazil Crop Yield and Land Cost"
+author: "Nick McManus"
+date: "5/18/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+
+```{r}
+# read in translated datasets
+temp_crops <- read_csv(here("data", "production_cost_temporary_crops_eng_.csv"))
+perm_crops <- read_csv(here("data", "production_cost_permenant_crops_eng.csv"))
+```
+
